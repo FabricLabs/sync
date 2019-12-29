@@ -1,0 +1,46 @@
+{
+  "name": "@fabric/rpg",
+  "version": "0.1.0-dev",
+  "description": "RPG is a template for building role-playing games.",
+  "main": "components/index.js",
+  "scripts": {
+    "build": "webpack",
+    "coverage": "nyc report --reporter html npm test",
+    "review:coverage": "npm run coverage && ecstatic reports/code-coverage",
+    "start": "npm run build && ecstatic assets",
+    "test": "nyc mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricLabs/rpg.git"
+  },
+  "keywords": [
+    "rpg",
+    "fabric",
+    "game"
+  ],
+  "author": "Fabric Labs",
+  "contributors": [
+    "Alexey Melnichenko",
+    "Eric Martindale"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FabricLabs/rpg/issues"
+  },
+  "homepage": "https://github.com/FabricLabs/rpg#readme",
+  "dependencies": {
+    "@fabric/core": "FabricLabs/fabric#pruning"
+  },
+  "devDependencies": {
+    "ecstatic": "^3.3.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "nyc": {
+    "exclude": [
+      "tests"
+    ],
+    "report-dir": "./reports/code-coverage"
+  }
+}
