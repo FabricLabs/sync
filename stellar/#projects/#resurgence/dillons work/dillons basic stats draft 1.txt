@@ -1,0 +1,56 @@
+We could just copy diablo 2's stat system
+Or we could choose one of the following stat systems(or a combination of them):
+
+Basic stats version A
+{{
+
+Each level gives you 3 stat points to spend
+We will get a better idea of The equations to use after testing
+
+Strength:
+	-hp=100+strength
+	-melee dmg=10+strength/10
+	
+Agility:
+	-Attack speed:  0 agility= 2 second attack speed
+			      100 agility=1 per sec attack speed
+			      200 agility=.33333…
+			      400 agility=  .2 per sec
+	-maybe run speed or run speed could be separate
+	-maybe dodge chance
+	-maybe stamina
+	
+Wizardry:
+	-Mana cap 100+wizardry
+	-mana regeneration   ask Dillon about mana regen speed
+	-maybe spell dmg
+	
+Defense/armor: 
+	Approaches 75% damage reduction.
+	% dmg reduction per amour unit reduces as armor stat increases
+	
+Stealth:
+	-reduces cpu enemies Viewing distance
+	-reduces cpu enemies viewing cone width
+	-reduces enemy player viewing distance of you
+	
+Luck:
+	-adds to probability of you dodging
+	-makes rare item drops more probable
+	-I'm sure there's more
+	
+Perception:
+	-maybe you can see further
+	-maybe you can detect stealth units better
+	-increases ability to see illusions. Aka detection
+}}
+	
+	
+	
+Basic stats version B
+{{
+There is also the option of having individually editable stats. Example: instead of having "strength" you just have hp and melee dmg.
+This method is simpler, easier to learn and players have more control over their character.
+It is certainly unorthodox, and may come with its own breed of balancing problems. But I like it.
+I understand if you don’t wanna go this route.
+}}
